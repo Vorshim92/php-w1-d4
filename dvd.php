@@ -32,7 +32,7 @@ class DVD extends MaterialeBibliotecario
         if (($this->dvdDisponibili + $numero <= $this->dvd)) {
             $this->dvdDisponibili +=  $numero;
             static::$contatoreMateriali +=  $numero;
-            static::$contatoreLibri += $numero;
+            static::$contatoreDVD += $numero;
         } else {
             echo "<br>" . "mi stai ritornando piu dvd di quanti ne posseggo"  . "<br>";
         }
